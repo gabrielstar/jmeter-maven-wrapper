@@ -1,6 +1,6 @@
 # jmeter-maven-wrapper
 
-A boilerplate project showign how to run JMeter tests with maven and maven wrapper.
+A boilerplate project showing how to run JMeter tests with maven and maven wrapper.
 
 Usage:
 
