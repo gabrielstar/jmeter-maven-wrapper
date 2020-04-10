@@ -7,11 +7,11 @@ jobs:
   - job: jmeter
     steps:
       - task: Maven@3
-          displayName: Run JMeter tests on Azure
-          inputs:
-            mavenPomFile: $(jmeter_scenario_pom)
-            javaHomeOption: 'JDKVersion'
-            jdkVersionOption: '1.8'
-            jdkArchitectureOption: 'x64'
-            publishJUnitResults: false
-            goals: 'clean verify'
+        displayName: Run JMeter tests on Azure
+        inputs:
+          mavenPomFile: $(jmeter_scenario_pom)
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.8'
+          jdkArchitectureOption: 'x64'
+          publishJUnitResults: false
+          goals: 'clean verify'
