@@ -1,0 +1,16 @@
+name: $(BuildID)
+trigger: none
+pool: ubuntu-16.04
+variables:
+  pom: $(System.DefaultWorkingDirectory)/jmeter-maven-wrapper/pom.xml
+jobs:
+  - job: jmeter
+    - task: Maven@3
+        displayName: Run JMeter tests on Azure
+        inputs:
+          mavenPomFile: $(jmeter_scenario_pom)
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.8'
+          jdkArchitectureOption: 'x64'
+          publishJUnitResults: false
+          goals: 'clean verify'
