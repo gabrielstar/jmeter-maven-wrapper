@@ -9,3 +9,5 @@ mvn verify
 OR
 
 mvnw verify
+
+Contains azure pipeline and example configuration for distributed run with traditional JMeter grid.
