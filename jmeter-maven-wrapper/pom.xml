@@ -70,6 +70,7 @@
                     </jMeterProcessJVMSettings>
                     <overrideRootLogLevel>${LogLevel}</overrideRootLogLevel>
                     <propertiesFilesDirectory>src/test/jmeter/props/${env}</propertiesFilesDirectory>
+                    <generateReports>true</generateReports>
                 </configuration>
             </plugin>
         </plugins>
