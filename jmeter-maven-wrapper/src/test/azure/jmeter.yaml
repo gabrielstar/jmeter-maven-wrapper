@@ -1,6 +1,6 @@
 name: $(BuildID)
 trigger: none
-pool:JMETER_EXECUTORS
+pool: JMETER_EXECUTORS
 variables:
   pom: $(System.DefaultWorkingDirectory)/jmeter-maven-wrapper/pom.xml
 jobs:
